@@ -9,7 +9,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     primary: { main: '#222a35' },
-    secondary: { main: '#546377' }
+    secondary: { main: '#546377' },
   },
   typography: {
     useNextVariants: true, // Migration to new typography. old typography will be removed in v4.0 Q1 2019. 
