@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { Paper } from "@material-ui/core/";
 
 export default styled(({ backgroundColor, ...otherProps }) => (
-  <Paper {...otherProps} square />
+  <Paper {...otherProps} />
 ))`
-  background-color: ${props => props.backgroundColor};
+  
   min-height: 100vh;
+  
 `;

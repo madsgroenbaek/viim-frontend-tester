@@ -3,7 +3,7 @@ import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import JssProvider from "react-jss/lib/JssProvider";
 import { create } from "jss";
 import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
-
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from './components/Header/Header';
 import Dashboard from './components/StoryPage/Dashboard';
 import theme from './theme';
@@ -18,12 +18,13 @@ const jss = create({
 class App extends Component {
   render() {
     return (
-      <JssProvider jss={jss} generateClassName={generateClassName}>
+      //<JssProvider jss={jss} generateClassName={generateClassName}>
         <MuiThemeProvider theme={theme}>
+          <CssBaseline />
           <Header />
-          <Dashboard />
+          {/* <Dashboard /> */}
         </MuiThemeProvider>
-      </JssProvider>
+      //</JssProvider>
     );
   }
 }

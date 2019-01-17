@@ -15,7 +15,7 @@ import Tabs from '../StyledTabs';
 const NavBar = () => {
     return(
         <div>
-            <AppBar position="static">
+            <AppBar position="static" color="inherit">
                 <Toolbar>
                     <div className="header-left-menu-items">
                         <IconButton color="secondary">
