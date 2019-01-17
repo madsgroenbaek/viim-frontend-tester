@@ -14,7 +14,7 @@ export default createMuiTheme({
     type:"dark",
     
   background: {
-      //"paper": "rgba(239, 158, 158, 1)",
+      "paper": "rgba(239, 158, 158, 1)",
       default: "rgba(255, 0, 2, 1)"
 
   },
